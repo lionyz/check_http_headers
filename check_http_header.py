@@ -51,7 +51,6 @@ def main():
     parse.description = 'input target url'
     parse.add_argument("-u","--input u",help="target url",dest="url",type=str,default=None)
     args = parse.parse_args()
-    #url = "https://ywxbej.cpic.com.cn"
     list_http_headers = get_url(args.url)
     check_http_head(list_http_headers)
 
